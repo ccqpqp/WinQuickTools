@@ -28,3 +28,10 @@ Publish single EXE:
 
 
 dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true
+
+## Safety
+
+This tool only modifies existing Windows settings
+(Explorer options / registry toggles).
+No background services or data collection.
+
