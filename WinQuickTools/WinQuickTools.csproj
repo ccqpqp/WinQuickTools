@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+	<PropertyGroup>
+
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<UseWindowsForms>true</UseWindowsForms>
+
+		<Nullable>enable</Nullable>
+
+		<ApplicationIcon>app.ico</ApplicationIcon>
+
+		<AssemblyName>WinQuickTools</AssemblyName>
+		<RootNamespace>WinQuickTools</RootNamespace>
+
+		<!-- ⭐⭐⭐ 단일 EXE 배포 설정 -->
+		<PublishSingleFile>true</PublishSingleFile>
+		<SelfContained>true</SelfContained>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Svg.Skia" Version="3.4.1" />
+		<None Include="app.ico">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>
